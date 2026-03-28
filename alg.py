@@ -1,11 +1,11 @@
-# 1 проверка наличия элемента в массиве
+# проверка наличия элемента в массиве
 def search(arr, el): 
     for x in arr:
         if x == el:
             return True
     return False
   
-# 2 поиск второго максимального элемента
+# поиск второго максимального элемента
 def second_max(arr):
     if len(arr) < 2:
         return False
@@ -18,7 +18,7 @@ def second_max(arr):
             max2 = x
     return max2
 
-# 3 бинарный поиск
+# бинарный поиск
 def bin_search(arr, el):
     sort_arr = sorted(arr)
     l, r = 0, len(sort_arr) - 1
@@ -32,7 +32,7 @@ def bin_search(arr, el):
             return True
     return False
 
-# 4 построение таблицы умножения
+# построение таблицы умножения
 def multiplication_table(n):
     table = []
     for i in range(1, n + 1):
@@ -42,7 +42,7 @@ def multiplication_table(n):
         table.append(row)
     return table
 
-# 5 сортировка выбором
+# сортировка выбором
 def selection_sort(arr):
     arr = arr.copy()
     n = len(arr)
